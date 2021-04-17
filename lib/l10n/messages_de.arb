@@ -1,0 +1,95 @@
+{
+    "app_title": "Bildbeschriftung App",
+
+    "menuitem_labels": " Beschriftungen",
+    "menuitem_export": " Exportieren",
+    "menuitem_stats": " Statistiken",
+    "menuitem_logs": " Protokolle",
+
+    "labels_screen_title": "Beschriftungen Verwalten",
+    "new_class_tooltip": "Neue Klasse Hinzufügen",
+
+    "create_class": "Klasse Erstellen",
+    "edit_class": "Klasse Bearbeiten",
+    "delete_class": "Klasse Löschen",
+    "class_name": "Klassenname",
+
+    "db_class_insert_error": "Fehler beim Erstellen der Klasse mit dem Namen '{name}'.",
+    "db_class_update_error": "Fehler beim Bearbeiten der Klasse mit dem Namen '{name}'.",
+
+    "class_name_empty": "Leere Zeichenfolge für Klassennamen nicht erlaubt.",
+    "class_name_valid_chars": "Der Klassenname darf nur alphanumerische Zeichen und _ enthalten.",
+    "class_name_issue": "Klasse mit dem Namen '{name}' schon existiert.",
+    "delete_class_confirmation": "{count, plural, =0{Sind Sie sicher?} =1{Sind Sie sicher, Klasse '{name}' ist verwendet um ein Bild zu beschriften.?} other{Sind Sie sicher, Klasse '{name}' ist verwendet um {count} Bilder zu beschriften.?}}",
+    "class_creation_success": "Klasse erfolgreich erstellt.",
+    "class_update_success": "Klasse erfolgreich bearbeitet.",
+    "class_delete_success": "Klasse '{name}' erfolgreich gelöscht.",
+
+
+    "details": "Details",
+    "cancel": "Abbrechen",
+    "save": "Sichern",
+    "yes": "Ja",
+    "no": "Nein",
+
+    "positive_class": "Taube",
+    "negative_class": "Nicht_Taube",
+    "error_add_image": "Fehler beim Hinzufügen eines neuen Bildes zur Kollektion.",
+    "error_update_image": "Fehler bei der Aktualisierung des Bildes.",
+
+    "camera": "Kamera",
+    "no_cameras_found": "Keine Kameras gefunden auf dem Gerät.",
+    "cameras_found": "{count, plural, =1{Eine Kamera '{name}' auf dem Gerät gefunden.} other{{count} Kameras auf dem Gerät gefunden, '{name}' wird verwendet.}}",
+
+    "error_file_size": "Fehler beim Abrufen der Dateigröße '{path}'",
+    "images_dir_exists": "Bilderverzeichnis '{path}' schon existiert.",
+    "images_dir_created": "Bilderverzeichnis '{path}' angelegt.",
+
+    "error": "Fehler",
+    "add_camera_picture_title": "Machen Sie ein Foto",
+    "exposure_mode": "Belichtungsmodus",
+    "auto" : "AUTO",
+    "reset_exposure_point": "Belichtungspunkt wird zurückgesetzt.",
+    "locked": "Gesperrt",
+    "exposure_offset": "Belichtungsoffset",
+    "focus_mode": "Fokusmodus",
+    "reset_focus_point": "Fokuspunkt wird zurückgesetzt.",
+    "flash_mode_set": "Blitzmodus auf '{mode}' eingestellt.",
+    "exposure_mode_set": "Belichtungsmodus auf '{mode}' eingestellt.",
+    "focus_mode_set": "Fokusmodus auf '{mode}' eingestellt.",
+    "image_could_not_be_captured": "Bild konnte nicht erfasst werden.",
+    "image_added_to_collection": "Bild erfolgreich zur Kollektion hinzugefügt.",
+    "added_image_path": "Neu hinzugefügter Bildspeicherort: '{path}'",
+    "big_camera_error_message" : "Die Kamera ist entweder nicht auf dem Gerät verfügbar oder die Berechtigung sie zu verwenden wurde verweigert. Für letzteres, gehen Sie zu 'Einstellungen-> Apps-> Bildbeschriftung App-> Berechtigungen' und zulassen Sie die Kamera Zugriff.",
+
+    "logs_title": "Protokolle (aktueller Lauf)",
+
+    "stats_title": "Statistiken",
+    "not_labelled": "Nicht beschriftet",
+    "images": "Bilder",
+    "database": "Datenbank",
+    "type": "Typ",
+    "kbytes": "KiloBytes",
+    "size_on_disk": "Größe auf der Festplatte",
+    "images_per_class": "Bilder pro Klasse",
+
+    "unlabeled_directory": "nicht-beschriftet",
+    "export_successful": "Export erfolgreich",
+    "export_success_message": "Datei '{path}' in '{time}' Sekunden exportiert.",
+    "export_progress_message": "'{num}' Bilder werden exportiert...",
+    "export_progress_indicator": "Exportieren Fortschrittsanzeige",
+
+
+    "label_picture_title": "Beschriften Sie das Bild",
+    "assign_class": "Klasse Zuweisen",
+    "add": "Hinzufügen",
+    "no_classes": "Es wurden keine Klassen erstellt.",
+    "class_label_update_success": "Bildklassenbeschriftung erfolgreich aktualisiert.",
+
+    "add_picture_from_camera_tooltip": "Bild von der Kamera hinzufügen",
+    "empty_images_screen_message": "Keine Bilder in der Kollektion. Bitte verwenden Sie die Kamera, um Bilder zur Kollektion hinzuzufügen und sie zu beschriften.",
+    "nothing_to_export": "Keine Bilder in der Kollektion, nichts zu exportieren.",
+    "collection_exported_to_file": "Kollektion exportiert in Datei '{path}'",
+    "error_during_export": "Fehler beim Exportieren: '{message}'",
+    "picture_deleted_from_collection": "Bild erfolgreich aus der Kollektion gelöscht.."
+}

@@ -1,0 +1,187 @@
+{
+    "app_title": "Image Labeler App",
+    "@app_title": {
+      "description": "Title of the application."
+    },
+
+    "menuitem_labels": " Labels",
+    "menuitem_export": " Export",
+    "menuitem_stats": " Stats",
+    "menuitem_logs": " Logs",
+
+    "labels_screen_title": "Manage Labels",
+    "new_class_tooltip": "Add New Class",
+
+    "create_class": "Create Class",
+    "edit_class": "Edit Class",
+    "delete_class": "Delete Class",
+    "class_name": "Class Name",
+
+    "db_class_insert_error": "Error creating Class with name '{name}'.",
+    "@db_class_insert_error": {
+      "placeholders": {
+        "name": {}
+      }
+    },
+    "db_class_update_error": "Error updating Class with name '{name}'.",
+    "@db_class_update_error": {
+      "placeholders": {
+        "name": {}
+      }
+    },
+
+
+    "class_name_empty": "Empty string not allowed for Class Name.",
+    "class_name_valid_chars": "Class Name can contain only alpha numeric characters and _.",
+    "class_name_issue": "Class with name '{name}' already exists.",
+    "@class_name_issue": {
+      "placeholders": {
+        "name": {}
+      }
+    },
+    "delete_class_confirmation": "{count, plural, =0{Are you sure?} =1{Are you sure, class '{name}' is used to label {count} image.?} other{Are you sure, class '{name}' is used to label {count} images.?}}",
+    "@delete_class_confirmation": {
+      "placeholders": {
+        "count": {},
+        "name": {}
+      }
+    },
+
+    "class_creation_success": "Class created successfully.",
+    "class_update_success": "Class updated successfully.",
+    "class_delete_success": "Class '{name}' deleted successfully.",
+    "@class_delete_success": {
+      "placeholders": {
+        "name": {}
+      }
+    },
+
+    "details": "Details",
+    "cancel": "Cancel",
+    "save": "Save",
+    "yes": "Yes",
+    "no": "No",
+
+    "positive_class": "Pigeon",
+    "negative_class": "Not_Pigeon",
+    "error_add_image": "Error Adding new Image to Collection.",
+    "error_update_image": "Error updating Image.",
+
+    "camera": "Camera",
+    "no_cameras_found": "No Cemeras found on the device..",
+    "cameras_found": "{count, plural, =1{1 Camera '{name}' found.} other{{count} Cameras found, using '{name}'.}}",
+    "@cameras_found": {
+      "placeholders": {
+        "count": {},
+        "name": {}
+      }
+    },
+
+    "error_file_size": "Error getting size of the file '{path}'",
+    "@error_file_size": {
+      "placeholders": {
+        "path": {}
+      }
+    },
+
+    "images_dir_exists": "Images directory '{path}' exists.",
+    "@images_dir_exists": {
+      "placeholders": {
+        "path": {}
+      }
+    },
+    "images_dir_created": "Images directory '{path}' created.",
+    "@images_dir_created": {
+      "placeholders": {
+        "path": {}
+      }
+    },
+
+    "error": "error",
+    "add_camera_picture_title": "Take a picture",
+    "exposure_mode": "Exposure Mode",
+    "auto" : "AUTO",
+    "reset_exposure_point": "Resetting exposure point.",
+    "locked": "LOCKED",
+    "exposure_offset": "Exposure Offset",
+    "focus_mode": "Focuse Mode",
+    "reset_focus_point": "Resetting focus point.",
+    "flash_mode_set": "Flash mode set to '{mode}'.",
+    "@flash_mode_set" : {
+      "placeholders": {
+        "mode": {}
+      }
+    },
+    "exposure_mode_set": "Exposure mode set to '{mode}'.",
+    "@exposure_mode_set" : {
+      "placeholders": {
+        "mode": {}
+      }
+    },
+    "focus_mode_set": "Focus mode set to '{mode}'.",
+    "@focus_mode_set" : {
+      "placeholders": {
+        "mode": {}
+      }
+    },
+    "image_could_not_be_captured": "Image could not be captured.",
+    "image_added_to_collection": "Image added to collection successfully.",
+    "added_image_path": "Newly Added image location: '{path}'",
+    "@added_image_path" : {
+      "placeholders": {
+        "path": {}
+      }
+    },
+    "big_camera_error_message": "Camera is either not available on the device or permission to use it denied. For the latter, go to 'Settings->Apps->Image Labeler App->Permissions' and grant Camera permission.",
+
+    "logs_title": "Logs (current run)",
+
+    "stats_title": "Stats",
+    "not_labelled": "Not Labeled",
+    "images": "Images",
+    "database": "Database",
+    "type": "Type",
+    "kbytes": "KiloBytes",
+    "size_on_disk": "Size on Disk",
+    "images_per_class": "Images per Class",
+
+    "unlabeled_directory": "un-labeled",
+    "export_successful": "Export successful",
+    "export_success_message": "File '{path}' exported in '{time}' seconds.",
+    "@export_success_message" : {
+      "placeholders": {
+        "path": {},
+        "time": {}
+      }
+    },
+    "export_progress_message": "Exporting '{num}' images...",
+    "@export_progress_message": {
+      "placeholders": {
+        "num": {}
+      }
+    },
+    "export_progress_indicator": "Export Progress Indicator",
+
+    "label_picture_title": "Label the Picture",
+    "assign_class": "Assign Class",
+    "add": "Add",
+    "no_classes": "There are no classes created.",
+    "class_label_update_success": "Picture Class label successfully updated.",
+
+    "add_picture_from_camera_tooltip": "Add Picture from Camera",
+    "empty_images_screen_message": "No images in the collection. Please use Camera to add images to collection and label them.",
+    "nothing_to_export": "No images in the collection, nothing to export.",
+    "collection_exported_to_file": "Collection exported to file '{path}'",
+    "@collection_exported_to_file": {
+      "placeholders": {
+        "path": {}
+      }
+    },
+    "error_during_export": "Error during export: '{message}'",
+    "@error_during_export": {
+      "placeholders": {
+        "message": {}
+      }
+    },
+    "picture_deleted_from_collection": "Picture successfully deleted from collection."
+}
