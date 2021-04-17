@@ -16,7 +16,6 @@ void main() async {
   Locale? deviceLocale = await Devicelocale.currentAsLocale;
   AppUtils.setAppLocalization(deviceLocale);
   try {
-    await AppUtils.deleteAppData();
     bool dirCreated = await AppUtils.createImagesDirectory();
     if (dirCreated) AppUtils.copySampleImages();
     // When app runs the first time, below call ends up creating the
