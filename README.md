@@ -15,7 +15,7 @@ When you run the app for the very first time it populates some sample data compr
 
 ### Localization
 
-It supports English and German. For all other device locales it falls back to "en_US". It honors device's locale when it starts up. You can change the locale through the app. Reflecting change in device's locale while the app is running is ignored. I have used a package called 'devicelocale' to get device locale even before MaterialApp and so 'context' is available. During project build, this package does throw a warning DevicelocalePlugin.java uses or overrides a deprecated API.
+It supports English and German. For all other device locales it falls back to "en_US". It honors device's locale when it starts up. You can change the locale through the app. Reflecting change in device's locale while the app is running is ignored. I have used a package called 'devicelocale' to get device locale even before MaterialApp and so 'context' is available. During project build, this package does throw a warning <b>DevicelocalePlugin.java uses or overrides a deprecated API.</b>
 
 ### Screenshots
 
