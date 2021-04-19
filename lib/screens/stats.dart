@@ -103,88 +103,84 @@ class _StatsScreenState extends State<StatsScreen> {
     ];
     List<int> sizes = [imagesSize ~/ 1000, dbSize ~/ 1000];
 
-    return SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: DataTable(
-            showBottomBorder: true,
-            columns: <DataColumn>[
-              DataColumn(label: getTitleRowText(AppUtils.yoLocalizations.type)),
-              DataColumn(
-                  label: getTitleRowText(AppUtils.yoLocalizations.kbytes))
-            ],
-            rows: List<DataRow>.generate(
-                sizeRowCount,
-                (int index) => DataRow(cells: <DataCell>[
-                      DataCell(Container(
-                          width: w1, child: getRowText(names[index]))),
-                      DataCell(
-                        Container(
-                            child: getRowText(
-                                AppUtils.getLocaleInteger(sizes[index]),
-                                ellipsis: true)),
-                      )
-                    ]))));
+    return DataTable(
+        showBottomBorder: true,
+        columns: <DataColumn>[
+          DataColumn(label: getTitleRowText(AppUtils.yoLocalizations.type)),
+          DataColumn(label: getTitleRowText(AppUtils.yoLocalizations.kbytes))
+        ],
+        rows: List<DataRow>.generate(
+            sizeRowCount,
+            (int index) => DataRow(cells: <DataCell>[
+                  DataCell(
+                      Container(width: w1, child: getRowText(names[index]))),
+                  DataCell(
+                    Container(
+                        child: getRowText(
+                            AppUtils.getLocaleInteger(sizes[index]),
+                            ellipsis: true)),
+                  )
+                ])));
   }
 
   Widget labelsTable() {
     double w1 = MediaQuery.of(context).size.width * 0.6;
 
-    return SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: DataTable(
-            showBottomBorder: true,
-            columns: <DataColumn>[
-              DataColumn(
-                  label: getTitleRowText(AppUtils.yoLocalizations.class_name)),
-              DataColumn(label: getTitleRowText("#"))
-            ],
-            rows: List<DataRow>.generate(
-                rowCount,
-                (int index) => DataRow(cells: <DataCell>[
-                      DataCell(Container(
-                          width: w1,
-                          child: getRowText(tableRows[index].label))),
-                      DataCell(
-                        Container(
-                            child: getRowText(tableRows[index].count.toString(),
-                                ellipsis: true)),
-                      )
-                    ]))));
+    return DataTable(
+        showBottomBorder: true,
+        columns: <DataColumn>[
+          DataColumn(
+              label: getTitleRowText(AppUtils.yoLocalizations.class_name)),
+          DataColumn(label: getTitleRowText("#"))
+        ],
+        rows: List<DataRow>.generate(
+            rowCount,
+            (int index) => DataRow(cells: <DataCell>[
+                  DataCell(Container(
+                      width: w1, child: getRowText(tableRows[index].label))),
+                  DataCell(
+                    Container(
+                        child: getRowText(tableRows[index].count.toString(),
+                            ellipsis: true)),
+                  )
+                ])));
   }
 
   Widget getBody() {
     if (dbSize == 0) {
       return Center(child: CircularProgressIndicator());
     }
-    return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-      Padding(
-          padding: EdgeInsets.only(top: 10, bottom: 10),
-          child: Text(AppUtils.yoLocalizations.size_on_disk,
-              style: TextStyle(fontSize: headlineStyle!.fontSize))),
-      sizesTable(),
-      Padding(
-          padding: EdgeInsets.only(top: 20, bottom: 10),
-          child: Divider(
-            color: Colors.lightBlue,
-            height: 10,
-            thickness: 2,
-            indent: 10,
-            endIndent: 10,
-          )),
-      Padding(
-          padding: EdgeInsets.only(top: 10, bottom: 10),
-          child: Text(AppUtils.yoLocalizations.images_per_class,
-              style: TextStyle(fontSize: headlineStyle!.fontSize))),
-      labelsTable(),
-      Padding(
-          padding: EdgeInsets.only(top: 20, bottom: 10),
-          child: Divider(
-            color: Colors.lightBlue,
-            height: 10,
-            thickness: 2,
-            indent: 10,
-            endIndent: 10,
-          )),
-    ]);
+    return SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+          Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10),
+              child: Text(AppUtils.yoLocalizations.size_on_disk,
+                  style: TextStyle(fontSize: headlineStyle!.fontSize))),
+          sizesTable(),
+          Padding(
+              padding: EdgeInsets.only(top: 20, bottom: 10),
+              child: Divider(
+                color: Colors.lightBlue,
+                height: 10,
+                thickness: 2,
+                indent: 10,
+                endIndent: 10,
+              )),
+          Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10),
+              child: Text(AppUtils.yoLocalizations.images_per_class,
+                  style: TextStyle(fontSize: headlineStyle!.fontSize))),
+          labelsTable(),
+          Padding(
+              padding: EdgeInsets.only(top: 20, bottom: 10),
+              child: Divider(
+                color: Colors.lightBlue,
+                height: 10,
+                thickness: 2,
+                indent: 10,
+                endIndent: 10,
+              )),
+        ]));
   }
 }
