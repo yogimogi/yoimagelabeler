@@ -23,7 +23,7 @@ class _AddCameraPictureState extends State<AddCameraPicture>
   double _minAvailableExposureOffset = 0.0;
   double _maxAvailableExposureOffset = 0.0;
   double _currentExposureOffset = 0.0;
-  bool _imageBeingCaptured = false;
+  // bool _imageBeingCaptured = false;
   late AnimationController _flashModeControlRowAnimationController;
   late Animation<double> _flashModeControlRowAnimation;
   late AnimationController _exposureModeControlRowAnimationController;
@@ -577,18 +577,13 @@ class _AddCameraPictureState extends State<AddCameraPicture>
                 child: Icon(Icons.camera_alt),
                 onPressed: () async {
                   try {
-                    if (_imageBeingCaptured) return;
-                    _imageBeingCaptured = true;
+                    if (_controller!.value.isTakingPicture) return;
                     await _initializeControllerFuture;
                     _controller!.takePicture().then((XFile file) {
                       // Picture was taken, display it on a new screen.
                       _goToLabelPictureScreen(context, file.path);
-                      _imageBeingCaptured = false;
-                    }).catchError((Object e) {
-                      _imageBeingCaptured = false;
-                    });
+                    }).catchError((Object e) {});
                   } catch (e) {
-                    _imageBeingCaptured = false;
                     AppUtils.logException(
                         e.runtimeType.toString(), e.toString());
                     AppUtils.showInSnackBar(context,
