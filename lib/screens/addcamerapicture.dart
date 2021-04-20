@@ -243,15 +243,15 @@ class _AddCameraPictureState extends State<AddCameraPicture>
                   ? () => onSetFlashModeButtonPressed(FlashMode.always)
                   : null,
             ),
-            IconButton(
-              icon: Icon(Icons.highlight),
-              color: _controller?.value.flashMode == FlashMode.torch
-                  ? Colors.orange
-                  : Colors.blue,
-              onPressed: _controller != null
-                  ? () => onSetFlashModeButtonPressed(FlashMode.torch)
-                  : null,
-            ),
+            // IconButton(
+            //   icon: Icon(Icons.highlight),
+            //   color: _controller?.value.flashMode == FlashMode.torch
+            //       ? Colors.orange
+            //       : Colors.blue,
+            //   onPressed: _controller != null
+            //       ? () => onSetFlashModeButtonPressed(FlashMode.torch)
+            //       : null,
+            // ),
           ],
         ),
       ),
